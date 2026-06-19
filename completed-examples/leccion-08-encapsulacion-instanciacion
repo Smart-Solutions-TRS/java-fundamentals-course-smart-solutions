@@ -1,0 +1,88 @@
+// ============================================================
+//  PROYECTO: "Arma tu equipo de personajes"
+//  Encapsulacion (getters/setters) + instanciacion
+//  + array de objetos + manipulacion de cadenas.
+//  Editor en linea sugerido: JDoodle u OnlineGDB.
+// ============================================================
+
+// ===== BLOQUE 1: EL MOLDE (la clase Personaje) =====
+class Personaje {
+
+    // 1) ATRIBUTOS PRIVADOS -> "private" = candado. Nadie de afuera los toca directo.
+    private String nombre;
+    private int vida;
+    private int poder;
+
+    // 2) CONSTRUCTOR -> se ejecuta una sola vez, al crear el personaje.
+    public Personaje(String nombre, int poder) {
+        this.nombre = nombre;   // this.nombre = el atributo ; nombre = el valor que llega
+        this.poder = poder;
+        this.vida = 100;        // todos nacen con 100 de vida
+    }
+
+    // 3) GETTERS -> ventanitas para LEER el dato sin tocarlo.
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public int getPoder() {
+        return poder;
+    }
+
+    // 4) SETTER CON REGLAS -> aqui vive la encapsulacion de verdad.
+    //    La vida NUNCA puede ser menor a 0 ni mayor a 100.
+    public void setVida(int nuevaVida) {
+        if (nuevaVida < 0) {
+            this.vida = 0;          // si intentan poner negativo -> queda en 0
+        } else if (nuevaVida > 100) {
+            this.vida = 100;        // si intentan pasarse de 100 -> queda en 100
+        } else {
+            this.vida = nuevaVida;  // si el valor es valido -> se acepta
+        }
+    }
+
+    // 5) COMPORTAMIENTO + CADENAS -> toUpperCase() pone el nombre en MAYUSCULAS.
+    public String gritoDeBatalla() {
+        return "¡" + nombre.toUpperCase() + " entra a la batalla con " + poder + " de poder!";
+    }
+
+    // Arma una sola linea de texto con la info del personaje.
+    public String mostrarFicha() {
+        return nombre + "  ->  Vida: " + vida + " | Poder: " + poder;
+    }
+}
+
+// ===== BLOQUE 2: EL JUEGO (donde todo arranca) =====
+public class Main {
+    public static void main(String[] args) {
+
+        // INSTANCIACION: sacamos personajes del molde.
+        Personaje heroe1 = new Personaje("Sombra", 80);
+        Personaje heroe2 = new Personaje("Aurora", 65);
+        Personaje heroe3 = new Personaje("Trueno", 90);
+
+        // ARRAY DE OBJETOS: una fila de casilleros para guardar al equipo.
+        Personaje[] equipo = new Personaje[3];
+        equipo[0] = heroe1;
+        equipo[1] = heroe2;
+        equipo[2] = heroe3;
+
+        // LA TRAMPA: intentamos poner vidas imposibles.
+        equipo[0].setVida(150);   // pide 150, pero el setter lo deja en 100
+        equipo[1].setVida(-40);   // pide -40, pero el setter lo deja en 0
+
+        // RECORRER el array con un bucle y mostrar a todos.
+        System.out.println("===== TU EQUIPO =====");
+        for (int i = 0; i < equipo.length; i++) {
+            System.out.println(equipo[i].mostrarFicha());
+        }
+
+        // Grito de batalla (manipulacion de cadenas).
+        System.out.println();
+        System.out.println(equipo[2].gritoDeBatalla());
+    }
+}
