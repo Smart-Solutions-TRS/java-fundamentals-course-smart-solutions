@@ -66,11 +66,10 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Práctica**: [Crea tu primera clase](https://www.jdoodle.com/online-java-compiler/) 👈 **¡Guarda y comparte!**
 
 ### Lección 8: Encapsulación, Instanciación y Estructuras de Datos (10-15 minutos)
-
 - **Descripción**: Aprende a proteger los datos de un objeto con getters y setters, crea instancias desde una clase y organízalas en un array.
-- **Enlace**: [Ver la lección](TU-LINK-DE-YOUTUBE-AQUÍ)
-- **Conclusiones clave**: `private` + getters/setters con reglas de validación; `new Personaje(...)` crea instancias; arrays de objetos; manipulación de cadenas con `toUpperCase()`.
-- **Práctica**: [Clic para programar](LINK-AL-EDITOR-PRECARGADO) 👈 **¡No necesitas registrarte!**
+- **Enlace**: [Ver la lección](https://youtu.be/oARau1XJzIg)
+- **Conclusiones clave**: private + getters/setters con reglas de validación; new Personaje(...) crea instancias; arrays de objetos; manipulación de cadenas con toUpperCase().
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/start-coding) 👈 ¡No necesitas registrarte!
 
 ### Lección 9: Desarrollo de un Programa Básico POO (10 minutos)
 
