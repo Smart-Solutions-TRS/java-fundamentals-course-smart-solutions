@@ -19,21 +19,21 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 ### Lección 1: ¿Qué es Java y la Programación? (5 minutos)
 
 - **Descripción**: Aprende qué es la programación y por qué Java es un excelente lenguaje para empezar.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link1)
+- **Enlace**: [Ver la lección](https://youtu.be/x0-c1YhCATk)
 - **Conclusiones clave**: Java se usa para aplicaciones y juegos; los programas son instrucciones para computadoras.
 - **Empieza a programar**: [Abrir JDoodle - Hola Mundo](https://www.jdoodle.com/ga/%2FIKer%2BAhhQHrQafbArBjQg%3D%3D)
 
 ### Lección 2: Sintaxis Básica — Variables y Tipos de Datos (8 minutos)
 
 - **Descripción**: Aprende a almacenar datos en Java usando variables.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link2)
+- **Enlace**: [Ver la lección](https://youtu.be/-TQr-_E17Bw)
 - **Conclusiones clave**: Usa `int`, `String`, `double`; declara como `int edad = 15;`
 - **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/HBgG5aYHI0Li%2Fw8J6BtS2w%3D%3D)
 
 ### Lección 3: Operadores y Expresiones (8 minutos)
 
 - **Descripción**: Aprende a realizar cálculos y comparaciones en Java.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link3)
+- **Enlace**: [Ver la lección](https://youtu.be/TBKM2NHPfAk)
 - **Conclusiones clave**: Operadores aritméticos (`+`, `-`, `*`, `/`); operadores de comparación (`==`, `>`, `<`).
 - **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/AKwU883vBqNgtSD5zCPUJg%3D%3D)
                 [Clic para programar](https://www.jdoodle.com/ga/TYixe5YYcnjIFbytsBMTdQ%3D%3D)
