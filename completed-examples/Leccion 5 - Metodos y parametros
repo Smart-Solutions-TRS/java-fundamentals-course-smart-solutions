@@ -1,0 +1,25 @@
+public class Metodos {
+
+    static void saludar() {
+        System.out.println("Hola! Bienvenido al curso.");
+    }
+
+    public static void main(String[] args) {
+        saludar();
+        saludar();
+        saludar();
+    }
+}
+
+public class MetodosConParametros {
+
+    static void saludar(String nombre) {
+        System.out.println("Hola, " + nombre + "!");
+    }
+
+    public static void main(String[] args) {
+        saludar("Ana");
+        saludar("Luis");
+        saludar("María");
+    }
+}
