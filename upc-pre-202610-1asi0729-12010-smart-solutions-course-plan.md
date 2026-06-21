@@ -36,7 +36,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link3)
 - **Conclusiones clave**: Operadores aritméticos (`+`, `-`, `*`, `/`); operadores de comparación (`==`, `>`, `<`).
 - **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/AKwU883vBqNgtSD5zCPUJg%3D%3D)
-                [Clic para programar](https://www.jdoodle.com/ga/i4UYGfmuRCMZfcWBl55yQw%3D%3D)
+                [Clic para programar](https://www.jdoodle.com/ga/TYixe5YYcnjIFbytsBMTdQ%3D%3D)
 
 ### Lección 4: Estructuras de Control — Decisiones y Bucles (10 minutos)
 
