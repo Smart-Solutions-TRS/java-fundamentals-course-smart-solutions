@@ -76,16 +76,16 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 ### Lección 9: Desarrollo de un Programa Básico POO (10 minutos)
 
 - **Descripción**: Construye un programa completo aplicando POO (ej. registro de "Estudiante" o juego de adivinanzas con clases).
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link9)
+- **Enlace**: [Ver la lección](https://youtu.be/qKwc7v-0muM)
 - **Conclusiones clave**: Integración de clases, atributos y métodos en un programa funcional de inicio a fin.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ia/1Ufj) 👈 **¡Inicio inmediato!**
 
 ### Lección 10: Mejores Prácticas y Errores Comunes para Principiantes (7 minutos)
 
 - **Descripción**: Consejos prácticos, errores típicos de quienes recién empiezan y cómo evitarlos.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link10)
+- **Enlace**: [Ver la lección](https://youtu.be/WZfup5hhrZg)
 - **Conclusiones clave**: Buenas prácticas de nomenclatura, errores comunes de sintaxis y lógica, recomendaciones para seguir aprendiendo.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ia/1Ufk) 👈 **¡No necesitas registrarte!**
 
 ---
 
