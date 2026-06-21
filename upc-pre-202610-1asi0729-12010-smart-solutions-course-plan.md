@@ -43,14 +43,16 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Descripción**: Toma decisiones con `if-else` y repite tareas con bucles `for` y `while`.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link4)
 - **Conclusiones clave**: `if (edad > 12) {}`; `for (int i = 0; i < 5; i++) {}`
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/WXuUInWthnLF5XyNEWqrSg%3D%3D) 
+                [Clic para programar](https://www.jdoodle.com/ga/%2Bgy5Ne6kblFPqkcMlqkKkg%3D%3D)
 
 ### Lección 5: Métodos (Funciones) y Parámetros (8 minutos)
 
 - **Descripción**: Crea código reutilizable definiendo métodos con parámetros.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link5)
 - **Conclusiones clave**: `public static void saludar(String nombre) {}`; reutilización de código mediante métodos.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/emQfDhryFpy9lERTsqNY0A%3D%3D)
+                [Clic para programar](https://www.jdoodle.com/ga/4WsSoceLiYOg8Aw3AwrSZQ%3D%3D)
 
 ### Lección 6: Entrada/Salida Básica con Scanner o Consola (7 minutos)
 
