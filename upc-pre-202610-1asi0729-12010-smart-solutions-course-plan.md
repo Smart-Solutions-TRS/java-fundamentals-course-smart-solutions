@@ -71,7 +71,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Descripción**: Aprende a proteger los datos de un objeto con getters y setters, crea instancias desde una clase y organízalas en un array.
 - **Enlace**: [Ver la lección](https://youtu.be/oARau1XJzIg)
 - **Conclusiones clave**: private + getters/setters con reglas de validación; new Personaje(...) crea instancias; arrays de objetos; manipulación de cadenas con toUpperCase().
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/start-coding)
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/nIyxcuvkYsKdJwZvATaB7Q%3D%3D)
 
 ### Lección 9: Desarrollo de un Programa Básico POO (10 minutos)
 
