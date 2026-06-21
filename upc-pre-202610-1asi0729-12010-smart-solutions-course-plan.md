@@ -57,14 +57,14 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Descripción**: Aprende a leer datos ingresados por el usuario usando `Scanner`.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link6)
 - **Conclusiones clave**: Uso de `Scanner` para leer texto y números desde la consola.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
+- **Práctica**: ([https://www.jdoodle.com/online-java-compiler/](https://www.jdoodle.com/ia/1Ufg))
 
 ### Lección 7: Introducción a la POO — Clases, Objetos, Constructores y Métodos Simples (12 minutos)
 
 - **Descripción**: Comprende los fundamentos de la programación orientada a objetos creando tus primeras clases y objetos.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link7)
 - **Conclusiones clave**: `class Mascota { String nombre; }`; diferencia entre clase y objeto; uso de constructores.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
+- **Práctica**:([https://www.jdoodle.com/online-java-compiler/](https://www.jdoodle.com/ia/1Ufh))
 
 ### Lección 8: Encapsulación, Instanciación y Estructuras de Datos (10-15 minutos)
 - **Descripción**: Aprende a proteger los datos de un objeto con getters y setters, crea instancias desde una clase y organízalas en un array.
