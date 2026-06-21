@@ -1,0 +1,108 @@
+// ============================================================
+//  PROYECTO: "Registro de Estudiantes"
+//  Leccion 9: Desarrollo de un programa basico con POO.
+//
+//  Aqui integramos TODO lo visto hasta ahora:
+//    - Clases y objetos
+//    - Atributos (privados) y constructor
+//    - Getters y setters (encapsulacion)
+//    - Metodos con validacion
+//    - Array de objetos
+//    - Bucle para recorrer el array
+//
+//  Editor en linea sugerido: JDoodle u OnlineGDB.
+// ============================================================
+
+// ===== BLOQUE 1: EL MOLDE (la clase Estudiante) =====
+class Estudiante {
+
+    // 1) ATRIBUTOS PRIVADOS -> protegidos con "private".
+    private String nombre;
+    private int edad;
+    private double promedio;   // nota promedio (por ejemplo 15.5)
+
+    // 2) CONSTRUCTOR -> llena los datos cuando se crea el estudiante.
+    public Estudiante(String nombre, int edad, double promedio) {
+        this.nombre = nombre;
+        this.edad = edad;
+        // Usamos el setter para que la validacion se respete siempre.
+        setPromedio(promedio);
+    }
+
+    // 3) GETTERS -> para LEER los datos sin tocarlos directo.
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public double getPromedio() {
+        return promedio;
+    }
+
+    // 4) SETTER CON VALIDACION -> el promedio debe estar entre 0 y 20.
+    //    Si mandan un valor imposible, se ajusta al limite mas cercano.
+    public void setPromedio(double nuevoPromedio) {
+        if (nuevoPromedio < 0) {
+            this.promedio = 0;       // no se permiten notas negativas
+        } else if (nuevoPromedio > 20) {
+            this.promedio = 20;      // tope maximo de la nota
+        } else {
+            this.promedio = nuevoPromedio;
+        }
+    }
+
+    // 5) COMPORTAMIENTO -> dice si el estudiante aprueba (promedio >= 11).
+    public boolean estaAprobado() {
+        return promedio >= 11;
+    }
+
+    // Arma una sola linea con la ficha del estudiante.
+    public String mostrarFicha() {
+        // Usamos un operador ternario (?) para elegir el texto.
+        // Es lo mismo que un if-else, pero en una sola linea.
+        String estado = estaAprobado() ? "APROBADO" : "DESAPROBADO";
+        return nombre + " | Edad: " + edad + " | Promedio: " + promedio + " | " + estado;
+    }
+}
+
+// ===== BLOQUE 2: EL PROGRAMA (donde todo arranca) =====
+public class Main {
+    public static void main(String[] args) {
+
+        // INSTANCIACION: creamos 3 estudiantes con el molde "Estudiante".
+        Estudiante e1 = new Estudiante("Lucia", 15, 17.5);
+        Estudiante e2 = new Estudiante("Mateo", 16, 9.0);
+        Estudiante e3 = new Estudiante("Valeria", 15, 25.0);  // nota imposible (mayor a 20)
+
+        // ARRAY DE OBJETOS: guardamos a todos en una lista fija.
+        Estudiante[] aula = new Estudiante[3];
+        aula[0] = e1;
+        aula[1] = e2;
+        aula[2] = e3;
+
+        // RECORRER el array con un bucle y mostrar la ficha de cada uno.
+        System.out.println("===== REGISTRO DEL AULA =====");
+        for (int i = 0; i < aula.length; i++) {
+            System.out.println(aula[i].mostrarFicha());
+        }
+
+        // CAMBIAR un dato usando el setter (con validacion incluida).
+        System.out.println();
+        System.out.println("Mateo estudia mas y sube su nota a 13...");
+        aula[1].setPromedio(13);
+        System.out.println(aula[1].mostrarFicha());
+
+        // CONTAR cuantos aprobaron.
+        int aprobados = 0;
+        for (int i = 0; i < aula.length; i++) {
+            if (aula[i].estaAprobado()) {
+                aprobados++;
+            }
+        }
+        System.out.println();
+        System.out.println("Total de aprobados: " + aprobados + " de " + aula.length);
+    }
+}

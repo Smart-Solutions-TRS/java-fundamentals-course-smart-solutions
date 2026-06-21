@@ -1,0 +1,141 @@
+// ============================================================
+//  PROYECTO: "Errores Reales y Buenas Prácticas (nivel POO)"
+//  Leccion 10: Mejores practicas y errores comunes.
+//
+//  Los alumnos ya pasaron 9 lecciones. Ya saben igual vs ==,
+//  punto y coma, llaves, etc. Aca vamos a los errores que
+//  PEGAN cuando crees que ya entendiste POO y empezas a
+//  encadenar clases, arrays, metodos y nulos.
+//
+//  Cada bloque viene en version "MAL" (comentada) y "BIEN".
+//  Descomenta el que quieras mostrar y ejecuta.
+//
+//  Editor en linea sugerido: JDoodle u OnlineGDB.
+// ============================================================
+
+// ============================================================
+//  Clase de apoyo (necesaria para que compile el ejemplo).
+//  Es una version simplificada del Estudiante de la Leccion 9.
+//  Va PRIMERO porque JDoodle exige que la clase ejecutable
+//  (public class Main) sea la ultima del archivo.
+// ============================================================
+class Estudiante {
+
+    // Constante publica: reemplaza el "numero magico" 11.
+    public static final double NOTA_MINIMA_APROBATORIA = 11.0;
+
+    private String nombre;
+    private int edad;
+    private double promedio;
+
+    public Estudiante(String nombre, int edad, double promedio) {
+        this.nombre = nombre;
+        this.edad = edad;
+        setPromedio(promedio);
+    }
+
+    public String getNombre() { return nombre; }
+    public int getEdad() { return edad; }
+    public double getPromedio() { return promedio; }
+
+    // Setter con validacion: protege el dato.
+    public void setPromedio(double nuevoPromedio) {
+        if (nuevoPromedio < 0) this.promedio = 0;
+        else if (nuevoPromedio > 20) this.promedio = 20;
+        else this.promedio = nuevoPromedio;
+    }
+
+    // Un metodo = una responsabilidad: este SOLO calcula.
+    public boolean estaAprobado() {
+        return promedio >= NOTA_MINIMA_APROBATORIA;
+    }
+}
+
+// ============================================================
+//  Clase ejecutable. En JDoodle DEBE llamarse Main y ser public.
+// ============================================================
+public class Main {
+    public static void main(String[] args) {
+
+        // ============================================================
+        //  ERROR 1: NullPointerException (el error mas temido)
+        // ============================================================
+        // MAL: declaraste la variable pero nunca le diste un objeto.
+        //      String nombre;
+        //      System.out.println(nombre.length());   // ¡CRASH! NullPointerException
+        //
+        // BIEN: siempre inicializar antes de usar.
+        String nombre = "Lucia";
+        System.out.println("1. Longitud: " + nombre.length());
+
+        // ============================================================
+        //  ERROR 2: == para comparar Strings (NO hace lo que crees)
+        // ============================================================
+        // MAL: == compara SI ES EL MISMO OBJETO, no el contenido.
+        //      String a = new String("hola");
+        //      String b = new String("hola");
+        //      System.out.println(a == b);   // imprime false (!)
+        //
+        // BIEN: para texto se usa .equals()
+        String a = new String("hola");
+        String b = new String("hola");
+        System.out.println("2. Con equals: " + a.equals(b));   // imprime true
+
+        // ============================================================
+        //  ERROR 3: Modificar un atributo SIN el setter
+        //           (rompe la validacion que tanto te costo escribir)
+        // ============================================================
+        // MAL: si el atributo es public, cualquiera lo rompe.
+        //      estudiante.promedio = 999;   // pasa tu validacion de 0..20
+        //
+        // BIEN: atributos private + setter (que valida).
+        Estudiante e = new Estudiante("Mateo", 16, 15.0);
+        e.setPromedio(999);   // el setter lo ajusta a 20
+        System.out.println("3. Promedio corregido: " + e.getPromedio());   // imprime 20.0
+
+        // ============================================================
+        //  ERROR 4: Array sin verificar si hay null adentro
+        // ============================================================
+        // MAL: confias en que todas las casillas tienen un objeto.
+        //      Estudiante[] aula = new Estudiante[3];
+        //      aula[0] = new Estudiante("Ana", 15, 14);
+        //      System.out.println(aula[1].getNombre());   // aula[1] es null -> CRASH
+        //
+        // BIEN: preguntar != null antes de usarlo.
+        Estudiante[] aula = new Estudiante[3];
+        aula[0] = new Estudiante("Ana", 15, 14);
+        for (int i = 0; i < aula.length; i++) {
+            if (aula[i] != null) {
+                System.out.println("4. " + aula[i].getNombre());
+            }
+        }
+
+        // ============================================================
+        //  ERROR 5: No separar el "mostrar" del "calcular"
+        //           (un metodo que hace de todo es un dolor de cabeza)
+        // ============================================================
+        // MAL: un metodo que calcula, imprime Y devuelve. Impossible de reutilizar.
+        //
+        // BIEN: un metodo calcula, otro muestra. Cada uno hace una sola cosa.
+        System.out.println("5. " + e.getNombre() + " esta aprobado: " + e.estaAprobado());
+
+        // ============================================================
+        //  ERROR 6: numeros magicos tirados por el codigo
+        // ============================================================
+        // MAL: if (promedio >= 11) ...   ¿que es 11? ¿por que 11 y no 10.5?
+        //
+        // BIEN: constantes con nombre que explican el PORQUE.
+        //      (en la clase Estudiante lo veran como NOTA_MINIMA_APROBATORIA)
+        System.out.println("6. Nota minima para aprobar: " + Estudiante.NOTA_MINIMA_APROBATORIA);
+
+        // ============================================================
+        //  BUENAS PRACTICAS (resumen)
+        // ============================================================
+        // 1. Inicializa las variables antes de usarlas (evita NullPointerException).
+        // 2. Compara Strings con .equals(), nunca con ==.
+        // 3. Atributos private + setter con validacion. Nada public.
+        // 4. Antes de usar un objeto de un array, verifica que no sea null.
+        // 5. Un metodo = una responsabilidad. No mezcles calcular y mostrar.
+        // 6. Usa constantes con nombre, no numeros magicos.
+    }
+}
