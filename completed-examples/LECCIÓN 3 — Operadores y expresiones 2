@@ -1,0 +1,12 @@
+public class Promedio {
+    public static void main(String[] args) {
+
+        int nota1 = 18;
+        int nota2 = 15;
+        int nota3 = 20;
+
+        double promedio = (nota1 + nota2 + nota3) / 3.0;
+
+        System.out.println("Tu promedio es: " + promedio);
+    }
+}
