@@ -10,7 +10,6 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 **Herramientas necesarias**: **¡Solo tu navegador web!** (Chrome, Firefox, Safari, Edge)  
 **📂 Repositorio de Código Fuente**: [https://github.com/Smart-Solutions-TRS/java-fundamentals-course-smart-solutions](https://github.com/Smart-Solutions-TRS/java-fundamentals-course-smart-solutions)
 
-> ⚠️ **Nota interna del equipo**: el enunciado del curso exige entre 5 y 10 lecciones de video (no 11). Por eso los 11 temas originales se agrupan en 10 lecciones. La Lección 8 (Encapsulación + Estructuras de datos) ya está grabada como un solo video y **no debe dividirse**. Quien tenía asignados los temas 10 y 11 puede grabarlos como Lección 9 y Lección 10, o combinarlos en un solo video si prefiere.
 
 ---
 
@@ -57,14 +56,14 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 ### Lección 6: Entrada/Salida Básica con Scanner o Consola (7 minutos)
 
 - **Descripción**: Aprende a leer datos ingresados por el usuario usando `Scanner`.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link6)
+- **Enlace**: ([https://www.youtube.com/watch?v=example-link6](https://www.youtube.com/watch?v=cxwMLIycO4c))
 - **Conclusiones clave**: Uso de `Scanner` para leer texto y números desde la consola.
 - **Práctica**: ([https://www.jdoodle.com/online-java-compiler/](https://www.jdoodle.com/ia/1Ufg))
 
 ### Lección 7: Introducción a la POO — Clases, Objetos, Constructores y Métodos Simples (12 minutos)
 
 - **Descripción**: Comprende los fundamentos de la programación orientada a objetos creando tus primeras clases y objetos.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link7)
+- **Enlace**: ([https://www.youtube.com/watch?v=example-link7](https://www.youtube.com/watch?v=SvAN484Qyfk))
 - **Conclusiones clave**: `class Mascota { String nombre; }`; diferencia entre clase y objeto; uso de constructores.
 - **Práctica**:([https://www.jdoodle.com/online-java-compiler/](https://www.jdoodle.com/ia/1Ufh))
 
