@@ -21,35 +21,36 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Descripción**: Aprende qué es la programación y por qué Java es un excelente lenguaje para empezar.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link1)
 - **Conclusiones clave**: Java se usa para aplicaciones y juegos; los programas son instrucciones para computadoras.
-- **Empieza a programar**: [Abrir JDoodle - Hola Mundo](https://www.jdoodle.com/online-java-compiler/)
+- **Empieza a programar**: [Abrir JDoodle - Hola Mundo](https://www.jdoodle.com/ga/%2FIKer%2BAhhQHrQafbArBjQg%3D%3D)
 
 ### Lección 2: Sintaxis Básica — Variables y Tipos de Datos (8 minutos)
 
 - **Descripción**: Aprende a almacenar datos en Java usando variables.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link2)
 - **Conclusiones clave**: Usa `int`, `String`, `double`; declara como `int edad = 15;`
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/) 👈 **¡No es necesario registrarse!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/HBgG5aYHI0Li%2Fw8J6BtS2w%3D%3D)
 
 ### Lección 3: Operadores y Expresiones (8 minutos)
 
 - **Descripción**: Aprende a realizar cálculos y comparaciones en Java.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link3)
 - **Conclusiones clave**: Operadores aritméticos (`+`, `-`, `*`, `/`); operadores de comparación (`==`, `>`, `<`).
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/) 👈 **¡Inicio inmediato!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/ga/AKwU883vBqNgtSD5zCPUJg%3D%3D)
+                [Clic para programar](https://www.jdoodle.com/ga/i4UYGfmuRCMZfcWBl55yQw%3D%3D)
 
 ### Lección 4: Estructuras de Control — Decisiones y Bucles (10 minutos)
 
 - **Descripción**: Toma decisiones con `if-else` y repite tareas con bucles `for` y `while`.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link4)
 - **Conclusiones clave**: `if (edad > 12) {}`; `for (int i = 0; i < 5; i++) {}`
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/) 👈 **¡No necesitas registrarte!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
 
 ### Lección 5: Métodos (Funciones) y Parámetros (8 minutos)
 
 - **Descripción**: Crea código reutilizable definiendo métodos con parámetros.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link5)
 - **Conclusiones clave**: `public static void saludar(String nombre) {}`; reutilización de código mediante métodos.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/) 👈 **¡No necesitas registrarte!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
 
 ### Lección 6: Entrada/Salida Básica con Scanner o Consola (7 minutos)
 
@@ -69,21 +70,21 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 - **Descripción**: Aprende a proteger los datos de un objeto con getters y setters, crea instancias desde una clase y organízalas en un array.
 - **Enlace**: [Ver la lección](https://youtu.be/oARau1XJzIg)
 - **Conclusiones clave**: private + getters/setters con reglas de validación; new Personaje(...) crea instancias; arrays de objetos; manipulación de cadenas con toUpperCase().
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/start-coding) 👈 ¡No necesitas registrarte!
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/start-coding)
 
 ### Lección 9: Desarrollo de un Programa Básico POO (10 minutos)
 
 - **Descripción**: Construye un programa completo aplicando POO (ej. registro de "Estudiante" o juego de adivinanzas con clases).
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link9)
 - **Conclusiones clave**: Integración de clases, atributos y métodos en un programa funcional de inicio a fin.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/) 👈 **¡Inicio inmediato!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
 
 ### Lección 10: Mejores Prácticas y Errores Comunes para Principiantes (7 minutos)
 
 - **Descripción**: Consejos prácticos, errores típicos de quienes recién empiezan y cómo evitarlos.
 - **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link10)
 - **Conclusiones clave**: Buenas prácticas de nomenclatura, errores comunes de sintaxis y lógica, recomendaciones para seguir aprendiendo.
-- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/) 👈 **¡No necesitas registrarte!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler/)
 
 ---
 
